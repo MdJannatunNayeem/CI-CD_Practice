@@ -15,12 +15,16 @@ jobs:
       - name: Code attached
       - uses: actions/checkout@v4
 
+
       - name: node.js  setup
       - uses: actions/setup-node@v4
         with:
-          node-version:'20'
+          node-version: '20'
+
+
       - name: Dependency Install
         run: npm install
+
 
       - name: App run
         run: node index.js
